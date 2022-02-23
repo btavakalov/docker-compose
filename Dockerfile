@@ -4,7 +4,7 @@ FROM docker:${DOCKER_VERSION}
 ARG COMPOSE_VERSION=
 ARG DOCKER_VERSION
 
-RUN apk add --no-cache py3-pip python3
+RUN apk add --no-cache py3-pip python3 curl
 RUN apk add --no-cache --virtual \
   build-dependencies \
   cargo \
